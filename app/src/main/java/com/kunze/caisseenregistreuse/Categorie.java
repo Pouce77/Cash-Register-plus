@@ -4,7 +4,7 @@ public class Categorie {
 
     String nom;
     int colorCategorie;
-
+    String color="";
     public Categorie() {
     }
 
