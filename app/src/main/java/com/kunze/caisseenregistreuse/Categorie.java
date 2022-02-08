@@ -8,7 +8,6 @@ public class Categorie {
     public Categorie() {
     }
 
-
     public Categorie(String nom, int colorCategorie) {
         this.nom = nom;
         this.colorCategorie = colorCategorie;
