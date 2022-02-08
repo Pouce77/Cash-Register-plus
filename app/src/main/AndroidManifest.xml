@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kunze.caisseenregistreuse"
+    android:versionCode="12"
+    android:versionName="2.2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaisseEnregistreuse">
+        <activity
+            android:name=".ListPDF"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ListeCSV"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Historique"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".NouveauProduit"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".NouvelleCategorie"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Commande"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Accueil"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>/>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.CaisseEnregistreuse.NoActionBar">
+        </activity>
+
+        <provider
+            android:name=".MonFileProvider"
+            android:authorities="com.kunze.caisseenregistreuse.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/providers_path" />
+        </provider>
+    </application>
+
+</manifest>

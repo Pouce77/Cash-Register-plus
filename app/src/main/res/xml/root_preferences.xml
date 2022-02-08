@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/messages_header">
+
+        <ListPreference
+            android:defaultValue="€"
+            android:entries="@array/Monnaies"
+            android:entryValues="@array/entryValues"
+            android:icon="@drawable/img_1"
+            android:key="list_preference_1"
+            android:summary="@string/chooseCurrency"
+            android:title="@string/Currency" />
+        <EditTextPreference
+            android:defaultValue="20.0"
+            android:icon="@drawable/img"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/choixpercentage"
+            android:title="Taxes (%)" />
+        <EditTextPreference
+            android:defaultValue="Address"
+            android:dialogIcon="@android:drawable/ic_dialog_email"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:key="edit_text_preference_2"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:summary="@string/entrecontact"
+            android:title="@string/contactdetail" />
+    </PreferenceCategory>
+</PreferenceScreen>

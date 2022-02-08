@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="boutonaccueilwidth">200dp</dimen>
+    <dimen name="boutonaccueilheight">60dp</dimen>
+    <dimen name="tailletextboutonaccueil">8sp</dimen>
+
+
+    <dimen name="widthlistViewCommande">200dp</dimen>
+    <dimen name="heightlistViewCommande">200dp</dimen>
+    <dimen name="heightlistViewTicket">150dp</dimen>
+
+    <dimen name="tailletexteboutoncommande">8sp</dimen>
+    <dimen name="tailletextetarif">12sp</dimen>
+
+</resources>

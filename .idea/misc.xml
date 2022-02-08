@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/drawable/borderbouton.xml" value="0.2" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/drawable/layoutback.xml" value="0.10546875" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/drawable/list_item_selected.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_accueil.xml" value="0.12526041666666668" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_commande.xml" value="0.246875" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_historique.xml" value="0.2" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_list_csv.xml" value="0.187890625" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_list_pdf.xml" value="0.2" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_liste_csv.xml" value="0.25" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_main.xml" value="0.12526041666666668" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_nouveau_produit.xml" value="0.3" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_nouvelle_categorie.xml" value="0.2711711711711712" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/activity_settings.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boit_de_dialogue_modifier_produit.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_creer_categorie.xml" value="0.268" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_enregistrer_csv.xml" value="0.44000000000000006" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_enregistrer_pdf.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_modifier_categorie.xml" value="0.5" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_print_invoice.xml" value="0.12526041666666668" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_supprimer_produit.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_dialogue_supprimer_toutes_les_commandes.xml" value="0.37578125" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/boite_de_diaogue_supprimer_commande.xml" value="0.25" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/content_main.xml" value="0.268" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/fragment_first.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/fragment_second.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listcategorie.xml" value="0.2" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listcommande.xml" value="0.6" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listfichiercsv.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listfichierpdf.xml" value="0.3" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listgestioncategorie.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listproduit.xml" value="0.44000000000000006" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listproduitcommande.xml" value="0.3" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/listtoutescommandes.xml" value="0.36" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/layout/settings.xml" value="0.26015625" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/menu/menu_gestion.xml" value="0.4" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/menu/menu_historique.xml" value="0.37578125" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/menu/menu_main.xml" value="0.36" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/menu/menu_settings.xml" value="0.37578125" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.32734375" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/Caisseenregistreuse/app/src/main/res/xml/root_preferences.xml" value="0.36" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

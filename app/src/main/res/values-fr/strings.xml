@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Caisse enregistreuse Plus</string>
+    <string name="monnaie">€</string>
+    <string name="annuler">Annuler</string>
+    <string name="open">Ouvrir</string>
+    <string name="share">Partager</string>
+    <!-- MAinActivity-->
+    <string name="nouvellecommande">Nouvelle commande</string>
+    <string name="historiquecommande">Historique des commandes</string>
+    <string name="ListCSV">Liste des commmandes exportées au format CSV</string>
+    <!-- activity_commande -->
+    <string name="buttonPay">Commande payée</string>
+    <string name="buttonErase">Effacer la sélection</string>
+    <string name="ajoutcommande">Vous avez enregistré la commande </string>
+    <string name="titreboiteimprim">Voulez-vous Enregistrer une facture ou Imprimer une facture</string>
+    <string name="savedInvoice">Vous avez enregistré la facture</string>
+    <string name="bilingadress">Adresse de facturation</string>
+
+
+
+    <!-- activity_historique -->
+    <string name="showOrder">Afficher les commandes par :</string>
+    <string name="trierPar">Trier par :</string>
+    <string name="Produit">Produit</string>
+    <string name="categorie">Catégorie</string>
+    <string name="enregistrerCSV">Enregistrer au format CSV</string>
+    <!-- activity_liste_csv -->
+    <string name="clicktoOpen">Cliquer pour ouvrir le fichier</string>
+    <!-- activity_nouveau_produit -->
+    <string name="choixcategorie">Choisir une catégorie</string>
+    <string name="enregistrerProd">Enregistrer un produit</string>
+    <string name="EntrerProd">Entrer le nom du produit</string>
+    <string name="entrertarif">Entrer le tarif du produit</string>
+    <string name="SaveProd">Enregistrer le produit</string>
+    <string name="listeprod">Liste des produits de la catégorie sélectionnée</string>
+    <!-- activity_nouvelle_categorie -->
+    <string name="entrerCatego">Entrer le nom de la catégorie</string>
+    <string name="changerCouleur">Changer la couleur de la catégorie</string>
+    <string name="enregistrerCatego">Enregistrer la catégorie</string>
+    <!-- boite de dialogue modifier produit et categorie-->
+    <string name="changeLibelle">Changer le libellé du produit</string>
+    <string name="changeTarif">Changer le tarif</string>
+    <string name="changenomcatego">Changer le nom de la catégorie</string>
+    <!-- boite de dialogue enregistrer csv -->
+    <string name="nomfichier">Nom du fichier (sans accent ni caractère spéciaux)</string>
+    <!-- boite de dialogue modif et supprim produit -->
+    <string name="supprimProduit">Êtes-vous sûr de vouloir supprimer le produit </string>
+    <string name="deletProduct">Supprimer le produit</string>
+    <string name="nbreVente">Nombre de ventes :</string>
+    <string name="ModifProd">Modifier le produit</string>
+    <string name="prodnonvide">Le nom ne peut pas être vide !</string>
+    <string name="entrprixprod">Vous devez entrer un prix pour le produit !</string>
+    <string name="leprodaetesupp">Le produit a été supprimé !</string>
+    <!-- boite de dialogue supprimer toutes les commandes -->
+    <string name="attentionSuppComm">Attention ! Vous allez supprimer toutes les commandes !\n\nÊtes-vous sûr de vouloir continuer ?</string>
+    <!-- boite de dialogue supprimer une commande -->
+    <string name="commandeParDate">Commande par date</string>
+    <!-- activity historique -->
+    <string name="aucunTri">Aucun tri</string>
+    <string name="numeroComm">Numéro de commande</string>
+    <string name="datetri">Date</string>
+    <string name="categorietri">Catégorie</string>
+    <string name="choixnum">Choisissez un numéro de commande</string>
+    <string name="choixdate">Choisissez une date</string>
+    <string name="toutesCommandes">Toutes les commandes</string>
+    <string name="tousProduits">Tous les produits</string>
+    <string name="tousCategorie">Toutes les catégories</string>
+    <string name="donnnomfichier">Donner un nom à votre fichier</string>
+    <string name="data">NUMERO DE COMMANDE;DATE;CATEGORIE;LIBELLE;TARIF\n</string>
+    <string name="aeteenregistrerdossier">a été enregistré dans le dossier</string>
+    <string name="vousavezsupptoutescomm">Vous avez supprimer toutes les commandes !</string>
+    <string name="vousavezsuppcommnum">Vous avez supprimer la commande n°</string>
+
+    <!-- menumain -->
+    <string name="GererProduit">Gérer les produits</string>
+    <string name="GererCategorie">Gérer les catégories</string>
+    <string name="newCommande">Nouvelle commmande</string>
+    <string name="suppressComm">Supprimer une commande</string>
+    <string name="supprallcomm">Supprimer toutes les commandes</string>
+
+    <string name="chooseColor">Choisir</string>
+    <string name="voulezvoussuppCate">Voulez-vous supprimer la catégorie</string>
+
+
+    <string name="modifCategorie">Modifier la catégorie</string>
+    <string name="suppriCategorie">Supprimer une catégorie</string>
+    <string name="categorieaetesupp">Vous avez supprimer la catégorie</string>
+
+    <!-- activity nouveauProduit -->
+
+    <string name="pasdecategorie">Pas de catégorie enregistrée</string>
+    <string name="veuillezaumoinsune">Veuillez enregistrer au moins une catégorie !</string>
+    <string name="entreprixdiffde0">Vous devez renseigner un prix différent de 0.00</string>
+    <string name="enregiSucces">Le produit a été enregistré avec succée !</string>
+
+    <!-- activity nouvelleCategorie -->
+
+    <string name="vousDevezentrernomCat">Vous devez entrer un nom de catégorie</string>
+    <string name="vouavezenregilaCat">Vous avez enregistré la catégorie </string>
+
+    <string name="messages_header">Paramètres</string>
+
+    <string-array name="Monnaies">
+        <item>Euros</item>
+        <item>Dollars</item>
+        <item>Livres Sterling</item>
+    </string-array>
+    <string-array name="entryValues">
+        <item>€</item>
+        <item>$</item>
+        <item>£</item>
+    </string-array>
+
+    <string name="choixpercentage">Choisissez le pourcentage des taxes appliqué à vos produits</string>
+    <string name="contactdetail">Coordonnées de l\'établissement</string>
+    <string name="entrecontact">Enregistrez les coordonnées qui apparaitront sur vos factures</string>
+    <string name="chooseCurrency">Choisissez votre monnaie</string>
+    <string name="Currency">Monnaies</string>
+    <string name="textenregistrPDF">La facture sera enregistrée au format PDF.\n\nVous pouvez simplement enregistrer sachant que vous pourrez toujours imprimer la facture par la suite en allant dans \'imprimer une facture précédente\'.\n\nSi vous annulez, la commande restera enregistrée dans l\'historique de vos commandes.\n\nEntrez une adresse de facturation :</string>
+    <string name="printInvoice">Imprimer une facture</string>
+    <string name="chooscommprint">Choisissez la commande pour laquelle vous voulez imprimer une facture</string>
+</resources>

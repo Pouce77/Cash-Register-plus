@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textcategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="CATEGORIE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tailletextetarif"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>

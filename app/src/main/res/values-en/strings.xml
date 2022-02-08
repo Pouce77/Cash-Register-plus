@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cash Register Plus</string>
+    <string name="monnaie">$</string>
+    <string name="annuler">Cancel</string>
+    <string name="open">Open</string>
+    <string name="share">Share</string>
+    <!-- activity_main -->
+    <string name="nouvellecommande">New Order</string>
+    <string name="historiquecommande">Order history</string>
+    <string name="ListCSV">List of orders exported in CSV format</string>
+    <!-- activity_commande -->
+    <string name="buttonPay">Order paid</string>
+    <string name="buttonErase">Clear selection</string>
+    <string name="ajoutcommande">You saved the order </string>
+    <string name="titreboiteimprim">Do you want to Save an invoice or Print an invoice</string>
+    <string name="savedInvoice">You saved the invoice</string>
+    <string name="bilingadress">Billing address</string>
+
+
+    <!-- activity_historique -->
+    <string name="showOrder">Show orders by :</string>
+    <string name="trierPar">Sort by :</string>
+    <string name="Produit">Product</string>
+    <string name="categorie">Category</string>
+    <string name="enregistrerCSV">Save in CSV format</string>
+    <!-- activity_listecsv -->
+    <string name="clicktoOpen">Click to open file</string>
+    <!-- activity_nouveau_produit -->
+    <string name="choixcategorie">Choose a category</string>
+    <string name="enregistrerProd">Register a product</string>
+    <string name="EntrerProd">Enter product name</string>
+    <string name="entrertarif">Enter product price</string>
+    <string name="SaveProd">Register</string>
+    <string name="listeprod">List of products in the selected category</string>
+    <!-- activity_nouvelle_categorie -->
+    <string name="entrerCatego">Enter category name</string>
+    <string name="changerCouleur">Change category color</string>
+    <string name="enregistrerCatego">Save Category</string>
+    <!-- boite de dialogue modifier produit et categorie-->
+    <string name="changeLibelle">Change product label</string>
+    <string name="changeTarif">Change price</string>
+    <string name="changenomcatego">Change category name</string>
+    <!-- boite de dialogue enregistrer csv -->
+    <string name="nomfichier">File name (without accents or special characters)</string>
+    <!-- boite de dialogue modif et supprim produit -->
+    <string name="supprimProduit">Are you sure you want to delete the product </string>
+    <string name="deletProduct">Delete product</string>
+    <string name="nbreVente">Number of sales : </string>
+    <string name="ModifProd">Edit product</string>
+    <string name="prodnonvide">The name cannot be empty!</string>
+    <string name="entrprixprod">You must enter a price for the product!</string>
+    <string name="leprodaetesupp">The product has been deleted!</string>
+    <!-- boite de dialogue supprimer toutes les commandes -->
+    <string name="attentionSuppComm">Warning ! You will delete all orders!\n\nAre you sure you want to continue?</string>
+    <!-- boite de dialogue supprimer une commande -->
+    <string name="commandeParDate">Order by date</string>
+    <!-- activity historique -->
+    <string name="aucunTri">No sorting</string>
+    <string name="numeroComm">Order number</string>
+    <string name="datetri">Date</string>
+    <string name="categorietri">Category</string>
+    <string name="choixnum">Choose an order number</string>
+    <string name="choixdate">Choose a date</string>
+    <string name="toutesCommandes">All orders</string>
+    <string name="tousProduits">All products</string>
+    <string name="tousCategorie">All categories</string>
+    <string name="donnnomfichier">Give a name to your file</string>
+    <string name="data">ORDER NUMBER;DATE;CATEGORY;LABEL;PRICE\n</string>
+    <string name="aeteenregistrerdossier">has been saved in the file</string>
+    <string name="vousavezsupptoutescomm">You have deleted all orders!</string>
+    <string name="vousavezsuppcommnum">You have deleted order no.</string>
+
+    <!-- menus -->
+    <string name="GererProduit">Manage products</string>
+    <string name="GererCategorie">Manage categories</string>
+    <string name="newCommande">New order</string>
+    <string name="suppressComm">Delete an order</string>
+    <string name="supprallcomm">Delete all orders</string>
+
+    <string name="chooseColor">Choose</string>
+
+    <string name="modifCategorie">Edit category</string>
+
+    <string name="voulezvoussuppCate">Do you want to delete the category</string>
+    <string name="suppriCategorie">Delete a category</string>
+    <string name="categorieaetesupp">You have deleted the category</string>
+
+    <string name="messages_header">Settings</string>
+
+    <!-- activity nouveauProduit -->
+
+    <string name="pasdecategorie">No registered category</string>
+    <string name="veuillezaumoinsune">Please save at least one category!</string>
+    <string name="entreprixdiffde0">You must enter a price other than 0.00</string>
+    <string name="enregiSucces">The product has been successfully registered!</string>
+
+    <!-- activity nouvelleCategorie -->
+
+    <string name="vousDevezentrernomCat">You must enter a category name!</string>
+    <string name="vouavezenregilaCat">You saved the category </string>
+
+
+    <string-array name="Monnaies">
+        <item>Euros</item>
+        <item>Dollars</item>
+        <item>Pounds</item>
+    </string-array>
+    <string-array name="entryValues">
+        <item>€</item>
+        <item>$</item>
+        <item>£</item>
+    </string-array>
+
+    <string name="choixpercentage">Choose the percentage of taxes applied to your products</string>
+    <string name="contactdetail">Contact details of the establishment</string>
+    <string name="entrecontact">Save the contact details that will appear on your invoices</string>
+    <string name="chooseCurrency">Choose your currency</string>
+    <string name="Currency">Currencies</string>
+    <string name="textenregistrPDF">The invoice will be saved in PDF format.\n\nYou can simply save knowing that you can always print the invoice afterwards by going to \'print a previous invoice\'.\n\nIf you cancel, the order will remain saved in the your order history.\n\nEnter a billing address:</string>
+    <string name="printInvoice">Print invoice</string>
+    <string name="chooscommprint">Choose the order for which you want to print an invoice</string>
+</resources>
