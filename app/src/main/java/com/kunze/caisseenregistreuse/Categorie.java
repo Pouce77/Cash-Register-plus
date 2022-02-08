@@ -4,6 +4,7 @@ public class Categorie {
 
     String nom;
     int colorCategorie;
+
     public Categorie() {
     }
 
