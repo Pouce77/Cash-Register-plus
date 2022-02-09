@@ -1,10 +1,15 @@
 package com.kunze.caisseenregistreuse;
 
+import android.widget.Button;
+import android.widget.CalendarView;
+
+import javax.security.auth.login.LoginException;
+
 public class Categorie {
 
     String nom;
     int colorCategorie;
-    String color="";
+
     public Categorie() {
     }
 

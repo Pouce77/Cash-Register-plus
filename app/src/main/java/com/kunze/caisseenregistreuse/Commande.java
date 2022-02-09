@@ -81,8 +81,12 @@ public class Commande extends AppCompatActivity {
 
                 arrayProduit= base.getListeProduitParVente(arrayAdapter.getItem(position).getNom());
                 categorieSelect.setText(arrayAdapter.getItem(position).getNom());
-                listProduitAdapter=new ListProduitAdapter(Commande.this,R.layout.listproduitcommande,arrayProduit);
-                listProduit.setAdapter(listProduitAdapter);
+                if (arrayProduit.isEmpty()){
+                    Toast.makeText(Commande.this,"Vous n'avez pas encore enregistré de produit pour cette catégorie !",Toast.LENGTH_LONG).show();
+                }else {
+                    listProduitAdapter = new ListProduitAdapter(Commande.this, R.layout.listproduitcommande, arrayProduit);
+                    listProduit.setAdapter(listProduitAdapter);
+                }
             }
         });
 

@@ -22,20 +22,18 @@ public class Accueil extends AppCompatActivity {
         image.setAnimation(anim);
 
 
-      new Thread(new Runnable() {
-            public void run() {
+      new Thread(() -> {
 
-               try {
-                    Thread.sleep(2000);
+         try {
+              Thread.sleep(2000);
 
-                Intent intent = new Intent(Accueil.this, MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-                    finish();
-                }catch (InterruptedException ignored){}
+          Intent intent = new Intent(Accueil.this, MainActivity.class);
+          startActivity(intent);
+          overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
+              finish();
+          }catch (InterruptedException ignored){}
 
-            }
-        }).start();
+      }).start();
 
             }
         }
