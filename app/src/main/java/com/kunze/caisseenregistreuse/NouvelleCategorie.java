@@ -25,7 +25,6 @@ public class NouvelleCategorie extends AppCompatActivity {
     AppCompatButton buttonChangerColor, buttonEnregistrer;
     View mColorPickerView;
     private int mDefaultColor;
-    FloatingActionButton fab;
     ListView listCategorie;
 
     ProduitDAO base;
@@ -39,10 +38,10 @@ public class NouvelleCategorie extends AppCompatActivity {
         buttonChangerColor=findViewById(R.id.buttonChangercolor);
         buttonEnregistrer=findViewById(R.id.buttonEnregistrerCategorie);
         listCategorie=findViewById(R.id.listViewCategorie);
-        fab=findViewById(R.id.fabCat);
+
 
         mColorPickerView=findViewById(R.id.mcolorPickerView2);
-        mDefaultColor=Color.BLUE;
+        mDefaultColor=getResources().getColor(R.color.orangeClub);
         base=new ProduitDAO(NouvelleCategorie.this);
         base.openDb();
 
@@ -126,17 +125,6 @@ public class NouvelleCategorie extends AppCompatActivity {
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i=new Intent(NouvelleCategorie.this,MainActivity.class);
-                startActivity(i);
-                overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
-                finish();
-            }
-        });
 
         ArrayList<Categorie> arrayList=new ArrayList<>();
         arrayList=base.getListeCategorie();
@@ -148,7 +136,7 @@ public class NouvelleCategorie extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_gestion, menu);
+        getMenuInflater().inflate(R.menu.menu_categorie, menu);
         return true;
     }
     @Override
@@ -169,7 +157,24 @@ public class NouvelleCategorie extends AppCompatActivity {
 
             return true;
         }
+        if (id == R.id.gererProduit) {
 
+            Intent i= new Intent(NouvelleCategorie.this,NouveauProduit.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
+
+            return true;
+        }
+
+        if (id == R.id.home) {
+
+            Intent i= new Intent(NouvelleCategorie.this,MainActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+            finish();
+
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

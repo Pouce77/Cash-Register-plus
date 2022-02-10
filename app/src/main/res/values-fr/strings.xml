@@ -120,4 +120,6 @@
     <string name="textenregistrPDF">La facture sera enregistrée au format PDF.\n\nVous pouvez simplement enregistrer sachant que vous pourrez toujours imprimer la facture par la suite en allant dans \'imprimer une facture précédente\'.\n\nSi vous annulez, la commande restera enregistrée dans l\'historique de vos commandes.\n\nEntrez une adresse de facturation :</string>
     <string name="printInvoice">Imprimer une facture</string>
     <string name="chooscommprint">Choisissez la commande pour laquelle vous voulez imprimer une facture</string>
+    <string name="home">Accueil</string>
+
 </resources>

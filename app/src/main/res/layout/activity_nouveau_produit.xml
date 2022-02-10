@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/widthlistViewCommande"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
@@ -27,7 +27,7 @@
         android:id="@+id/spinnerCategorie"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:background="@android:drawable/spinner_dropdown_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -65,33 +65,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEnregistrerProduit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        app:backgroundTint="@color/orangeClub"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borderbouton"
+        android:padding="5dp"
+        android:text="@string/SaveProd"
+        android:textSize="@dimen/tailletextetarif"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_home_white_18dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
         android:background="@color/blueClub"
         android:orientation="vertical"
         android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/spinnerCategorie"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spinnerCategorie"
@@ -142,6 +141,7 @@
             android:layout_width="400dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
             android:background="@android:drawable/editbox_background_normal"
             android:ems="10"
             android:inputType="numberDecimal"
@@ -150,18 +150,6 @@
             android:text="0.00"
             android:textSize="@dimen/tailletextetarif"
             tools:ignore="TouchTargetSizeCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonEnregistrerProduit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/borderbouton"
-            android:padding="5dp"
-            android:text="@string/SaveProd"
-            android:textSize="@dimen/tailletextetarif" />
 
     </LinearLayout>
 

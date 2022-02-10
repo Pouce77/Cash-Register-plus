@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/supprimerCommande"
@@ -9,5 +10,10 @@
         android:title="@string/supprallcomm" />
     <item
         android:id="@+id/printInvoice"
-        android:title="Print an invoice" />
+        android:title="@string/printInvoice" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_white_18dp"
+        android:title="@string/home"
+        app:showAsAction="always" />
 </menu>

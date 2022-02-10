@@ -75,7 +75,6 @@ public class Historique extends AppCompatActivity {
         radioCategorie=findViewById(R.id.radioButtonCategorie);
         radioGroup=findViewById(R.id.radioHisto);
 
-        fab=findViewById(R.id.fabHistorique);
         base=new ProduitDAO(Historique.this);
         base.openDb();
 
@@ -254,18 +253,7 @@ public class Historique extends AppCompatActivity {
         }
     });
 
-    fab.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
 
-            Intent i=new Intent(Historique.this,MainActivity.class);
-            startActivity(i);
-            overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
-            finish();
-
-        }
-    });
 
     radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -547,6 +535,15 @@ public class Historique extends AppCompatActivity {
         return true;
         }
 
+        if (id == R.id.home) {
+
+            Intent i= new Intent(Historique.this,MainActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+            finish();
+
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

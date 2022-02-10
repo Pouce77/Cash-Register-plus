@@ -24,7 +24,6 @@ public class NouveauProduit extends AppCompatActivity {
     Spinner spinner;
     AppCompatButton enregistrer;
     EditText editLibelle,editTarif;
-    FloatingActionButton fab;
     ListView listviewProduit;
     ProduitDAO base;
     ArrayList<Produit> listProduit;
@@ -41,7 +40,6 @@ public class NouveauProduit extends AppCompatActivity {
         enregistrer=findViewById(R.id.buttonEnregistrerProduit);
         editLibelle=findViewById(R.id.editTextLibelle);
         editTarif=findViewById(R.id.editTextPrix);
-        fab=findViewById(R.id.fab);
         listviewProduit=findViewById(R.id.listProduits);
 
         base.openDb();
@@ -117,17 +115,6 @@ public class NouveauProduit extends AppCompatActivity {
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i=new Intent(NouveauProduit.this,MainActivity.class);
-                startActivity(i);
-                overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
-                finish();
-            }
-        });
     }
 
     @Override
@@ -151,6 +138,16 @@ public class NouveauProduit extends AppCompatActivity {
             startActivity(i);
             overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
 
+            finish();
+
+            return true;
+        }
+
+        if (id == R.id.home) {
+
+            Intent i= new Intent(NouveauProduit.this,MainActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
             finish();
 
             return true;

@@ -6,4 +6,9 @@
         android:id="@+id/newCommande"
         android:title="@string/newCommande"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_white_18dp"
+        android:title="@string/home"
+        app:showAsAction="always" />
 </menu>

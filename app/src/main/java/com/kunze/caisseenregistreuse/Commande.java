@@ -68,7 +68,6 @@ public class Commande extends AppCompatActivity {
         enregistrerCommande=findViewById(R.id.enregistrerCommande);
         effacerCommande=findViewById(R.id.effacerCommande);
         textTaxe=findViewById(R.id.textTaxe);
-        fab=findViewById(R.id.fabcommande);
         monnaie=new Monnaie();
         total.setText(monnaie.getMonnaie(Commande.this)+" 0.00");
 
@@ -209,24 +208,13 @@ public class Commande extends AppCompatActivity {
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent i=new Intent(Commande.this,MainActivity.class);
-                startActivity(i);
-                overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
-                finish();
-
-            }
-        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_commande, menu);
         return true;
     }
 
@@ -259,6 +247,16 @@ public class Commande extends AppCompatActivity {
             Intent i= new Intent(Commande.this,Settings.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+
+            return true;
+        }
+
+        if (id == R.id.home) {
+
+            Intent i= new Intent(Commande.this,MainActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+            finish();
 
             return true;
         }

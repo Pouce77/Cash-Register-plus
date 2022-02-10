@@ -116,6 +116,6 @@
     <string name="textenregistrPDF">The invoice will be saved in PDF format.\n\nYou can simply save knowing that you can always print the invoice afterwards by going to \'print a previous invoice\'.\n\nIf you cancel, the order will remain saved in the your order history.\n\nEnter a billing address:</string>
     <string name="printInvoice">Print invoice</string>
     <string name="chooscommprint">Choose the order for which you want to print an invoice</string>
-
+    <string name="home">Home</string>
 
 </resources>
