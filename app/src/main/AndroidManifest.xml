@@ -24,31 +24,38 @@
         <activity
             android:name=".ListPDF"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".Settings"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".ListeCSV"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".Historique"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".NouveauProduit"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".NouvelleCategorie"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".Commande"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            />
         <activity android:name=".Accueil"
             android:exported="true"
             android:screenOrientation="landscape">

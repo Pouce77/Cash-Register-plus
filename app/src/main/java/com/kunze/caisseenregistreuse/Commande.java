@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -231,7 +232,7 @@ public class Commande extends AppCompatActivity {
             Intent i= new Intent(Commande.this,NouvelleCategorie.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
+            finish();
             return true;
         }
         if (id == R.id.ajoutProduit) {
@@ -239,7 +240,7 @@ public class Commande extends AppCompatActivity {
             Intent i= new Intent(Commande.this,NouveauProduit.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
+            finish();
             return true;
         }
         if (id == R.id.settings) {
@@ -247,7 +248,7 @@ public class Commande extends AppCompatActivity {
             Intent i= new Intent(Commande.this,Settings.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
-
+            finish();
             return true;
         }
 
@@ -283,6 +284,13 @@ public class Commande extends AppCompatActivity {
 
         return taxe;
     }
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i= new Intent(Commande.this,MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+        finish();    }
 
     @Override
     protected void onDestroy() {

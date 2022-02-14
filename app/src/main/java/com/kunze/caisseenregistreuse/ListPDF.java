@@ -60,4 +60,11 @@ public class ListPDF extends AppCompatActivity {
         });
 
     }
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i= new Intent(ListPDF.this,MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+        finish();    }
 }

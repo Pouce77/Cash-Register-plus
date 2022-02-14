@@ -163,6 +163,13 @@ public class NouveauProduit extends AppCompatActivity {
         listviewProduit.setAdapter(adapter);
     }
 
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i= new Intent(NouveauProduit.this,MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+        finish();    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

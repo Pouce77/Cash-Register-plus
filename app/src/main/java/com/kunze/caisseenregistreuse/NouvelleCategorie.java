@@ -178,6 +178,13 @@ public class NouvelleCategorie extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i= new Intent(NouvelleCategorie.this,MainActivity.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.slideleft, R.anim.slideoutright);
+        finish();    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
