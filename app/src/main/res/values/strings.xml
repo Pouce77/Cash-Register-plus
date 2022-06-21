@@ -117,5 +117,6 @@
     <string name="printInvoice">Print invoice</string>
     <string name="chooscommprint">Choose the order for which you want to print an invoice</string>
     <string name="home">Home</string>
+    <string name="setttingsTaxes">To add a tax, use only numbers and/or a dot in the settings.</string>
 
 </resources>

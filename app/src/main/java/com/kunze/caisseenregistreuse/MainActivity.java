@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i= new Intent(MainActivity.this,Commande.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
+                finish();
             }
         });
 
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i= new Intent(MainActivity.this,Historique.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+                finish();
             }
         });
 
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i=new Intent(MainActivity.this,ListeCSV.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+                finish();
             }
         });
 
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i=new Intent(MainActivity.this,ListPDF.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+                finish();
             }
         });
 
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i= new Intent(MainActivity.this,NouvelleCategorie.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+            finish();
             return true;
         }
         if (id == R.id.ajoutProduit) {
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i= new Intent(MainActivity.this,NouveauProduit.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+            finish();
             return true;
         }
         if (id == R.id.settings) {
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i= new Intent(MainActivity.this,Settings.class);
             startActivity(i);
             overridePendingTransition(R.anim.slideright, R.anim.slideoutleft);
-
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);

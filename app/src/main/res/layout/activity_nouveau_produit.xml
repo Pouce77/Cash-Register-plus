@@ -26,7 +26,7 @@
     <Spinner
         android:id="@+id/spinnerCategorie"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginTop="5dp"
         android:background="@android:drawable/spinner_dropdown_background"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,8 +117,8 @@
 
         <EditText
             android:id="@+id/editTextLibelle"
-            android:layout_width="400dp"
-            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_marginTop="8dp"
             android:background="@android:drawable/editbox_background_normal"
             android:ems="10"
@@ -138,8 +138,8 @@
 
         <EditText
             android:id="@+id/editTextPrix"
-            android:layout_width="400dp"
-            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="5dp"
             android:background="@android:drawable/editbox_background_normal"
