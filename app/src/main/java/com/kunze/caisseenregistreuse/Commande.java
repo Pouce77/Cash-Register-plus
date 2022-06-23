@@ -283,10 +283,8 @@ public class Commande extends AppCompatActivity {
         SharedPreferences pref=PreferenceManager.getDefaultSharedPreferences(Commande.this);
         String taxeStringFormat=(pref.getString("edit_text_preference_1","20.0")).replace(",",".");
         String taxeFinish=taxeStringFormat.replace("%","");
-        if (taxeFinish.matches("[0-9]*.?[0-9]*")){
+        if (taxeFinish.matches("[0-9]*.?[0-9]*")&&!taxeFinish.matches("")){
             taxe=Double.parseDouble(taxeFinish);
-        }else{
-            Toast.makeText(Commande.this,"Pour ajouter une taxe, utiliser seulement des chiffres et/ou un point  dans les paramètres.",Toast.LENGTH_SHORT).show();
         }
         Log.e("taxefinish",taxeFinish);
         Log.e("Taxe",String.valueOf(taxe));

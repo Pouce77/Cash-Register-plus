@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -90,6 +91,7 @@ public class ListGestionProduitAdapter extends ArrayAdapter<Produit> {
                     final View alertDialogView = factory.inflate(R.layout.boit_de_dialogue_modifier_produit, null);
                     final EditText modifLibell=alertDialogView.findViewById(R.id.editcategorieModif);
                     final EditText modifTarif=alertDialogView.findViewById(R.id.editTarifModif);
+                    final CheckBox resetSales=alertDialogView.findViewById(R.id.checkBoxResetSales);
                     modifLibell.setText(libelle);
                     modifTarif.setText(tarif);
                     //Création de l'AlertDialog
@@ -110,12 +112,15 @@ public class ListGestionProduitAdapter extends ArrayAdapter<Produit> {
                             }else  if(modifTarif.getText().toString().matches("")){
                                 Toast.makeText(mContext,getContext().getResources().getString(R.string.entrprixprod),Toast.LENGTH_LONG).show();
                             }else {
+                                if(resetSales.isChecked()) {
+                                    p.setVente(0);
+                                }
+                                    Produit pNew = new Produit(modifLibell.getText().toString(), p.getCategorie(), Double.parseDouble(modifTarif.getText().toString()), p.getVente());
+                                    mBase.mettreAjourUnProduit(p, pNew);
+                                    mObjects = mBase.getListeProduit(p.getCategorie());
+                                    ListGestionProduitAdapter adapter = new ListGestionProduitAdapter(mContext, R.layout.listproduit, mObjects, mBase, mlistView);
+                                    mlistView.setAdapter(adapter);
 
-                                Produit pNew = new Produit(modifLibell.getText().toString(), p.getCategorie(), Double.parseDouble(modifTarif.getText().toString()),p.getVente());
-                                mBase.mettreAjourUnProduit(p, pNew);
-                                mObjects = mBase.getListeProduit(p.getCategorie());
-                                ListGestionProduitAdapter adapter = new ListGestionProduitAdapter(mContext, R.layout.listproduit, mObjects, mBase, mlistView);
-                                mlistView.setAdapter(adapter);
                             }
 
                         }

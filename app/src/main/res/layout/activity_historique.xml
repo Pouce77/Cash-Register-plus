@@ -39,7 +39,7 @@
         <Spinner
             android:id="@+id/spinnerTri"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="35dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="8dp"
@@ -57,7 +57,7 @@
         <Spinner
             android:id="@+id/spinnerCommmandeTriee"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="35dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:background="@android:drawable/spinner_dropdown_background" />
@@ -75,7 +75,7 @@
         <RadioGroup
             android:id="@+id/radioHisto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:checkedButton="@id/radioButtonProduit"
             android:orientation="horizontal">
 
@@ -95,7 +95,7 @@
         <Spinner
             android:id="@+id/spinnerTriFin"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="35dp"
             android:layout_margin="8dp"
             android:background="@android:drawable/spinner_dropdown_background" />
     </LinearLayout>
@@ -123,7 +123,7 @@
         android:text="@string/enregistrerCSV"
         android:textSize="@dimen/tailletexteboutoncommande"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/listTriee"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/listTriee"
         app:layout_constraintTop_toBottomOf="@+id/listTriee"

@@ -122,5 +122,5 @@
     <string name="chooscommprint">Choisissez la commande pour laquelle vous voulez imprimer une facture</string>
     <string name="home">Accueil</string>
     <string name="setttingsTaxes">Pour ajouter une taxe, utiliser seulement des chiffres et/ou un point  dans les paramètres.</string>
-
+    <string name="resetSales">Remettre à zéro le nombre de ventes</string>
 </resources>
